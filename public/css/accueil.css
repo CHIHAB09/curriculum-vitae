@@ -1,0 +1,277 @@
+
+body {
+    margin : 0 auto;
+    color : #222; 
+    background : #F5f3ee; 
+    font-family : 'Montserrat', sans-serif;
+    padding:0;
+    /*background: #262626;*/
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.bienvenue ul {
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.bienvenue ul li {
+    text-align: center;
+    list-style: none;
+    color: #222;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    letter-spacing: 15px;
+    animation: flash 1.4s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: #222;
+        text-shadow: none;
+    }
+    90%{
+        color: #222;
+        text-shadow: none;
+    }
+    100%{
+        color: #ced7df;
+        text-shadow: 0 0 7px #ced7df,00 0 50px #ced7df;
+    }
+}
+
+.bienvenue ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.bienvenue ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.bienvenue ul li:nth-child(2){
+    animation-delay: .2s;
+}
+.bienvenue ul li:nth-child(3){
+    animation-delay: .3s;
+}
+.bienvenue ul li:nth-child(4){
+    animation-delay: .4s;
+}
+.bienvenue ul li:nth-child(5){
+    animation-delay: .5s;
+}
+.bienvenue ul li:nth-child(6){
+    animation-delay: .6s;
+}
+.bienvenue ul li:nth-child(7){
+    animation-delay: .7s;
+}
+.bienvenue ul li:nth-child(8){
+    animation-delay: .8s;
+}
+.bienvenue ul li:nth-child(9){
+    animation-delay: .9s;
+}
+
+.titre {
+    margin: 20px;
+    text-align: center;
+    color:#2E294E;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.contenue p{
+    text-align: justify;
+    font-size: 1.3em;
+
+}
+
+#photo{
+    display: flex;
+    background: #f5f3ee;
+}
+
+#photo img{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    margin: 25px auto;
+}
+/* barre de navigation*/
+
+.items{
+	color: white;
+	font-weight: bold;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 19px;	
+}
+
+nav{
+  color : #222; 
+  font-family: 'Bebas Neue', cursive;
+  width: auto;
+  margin: 20px auto 50px auto;
+  background: #f5f3ee;
+  padding: 5px 40px;
+  letter-spacing: 2px;
+}
+nav ul{
+  list-style: none;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+  display: inline;
+  
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #2E294E;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li a{
+  color: #222;
+  font-size: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: .4s;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:hover a{
+  color: #2E294E;
+  text-decoration: none;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btnNav{
+  display: none;
+}
+nav ul li.btnNav.hide i:before{
+  content: '\f00d';
+}
+nav div{
+  float: right;
+  margin-top: 18px;
+}
+
+/*FOOTER*/
+.copy{
+	bottom: 100%;
+	text-align: center;
+	color: black;
+}
+.footersocial {
+width: 100%;
+position:fixed;
+text-align: center;
+bottom: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #f5f3ee;
+}
+.social {
+float: left;
+color: #42433E;
+margin-bottom: 1em;
+}
+
+.social img {
+padding-top: 40px ;
+padding-right: 15px;
+max-height: 40px;
+transition: 0.8s;
+}
+
+.social a img:hover {
+padding-top: 20px;
+padding-bottom: 20px;
+transition: 0.5s;
+}
+
+
+@media screen and (max-width:640px){
+  .titre{
+    margin: 2px 0px 17px 43px;
+  }
+  .contenue p{
+    text-align: initial;
+    /*margin: 0px 25px 20px 73px;*/
+    margin: -15px 0px 12px 31px
+  }
+  .bienvenue {
+    margin: -48px -60px -20px 0px;
+    padding: 0px 0 9px 0px;
+  }
+  nav{
+    padding: 5px 30px;
+  }
+  nav div{
+    margin-top: 0px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li.btnNav{
+  display: block;
+  background: silver;
+  color: black;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+nav ul li.items:hover{
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #ced7df,
+              inset 0 0 10px #2E294E;
+}
+nav ul li.items:hover:after{
+  opacity: 0;
+}
+}
+
+li a:hover {
+    text-decoration: underline;
+    color:#ced7df;
+}
+.btnNav{
+    padding: 10px 19px;
+}
+
