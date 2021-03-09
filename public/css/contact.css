@@ -11,6 +11,9 @@ h1{
     font-weight: normal;
     text-align: center;
 }
+textarea{
+  resize: none;
+}
   /*PAGE FORMULAIRE */
   
   .titreformulaire{
@@ -30,7 +33,7 @@ h1{
     margin-bottom: 30px;
     width: 50%;
     height:25px;
-    vertical-align: middle;
+   /*vertical-align: middle; */
     display: block;
   }
   
@@ -73,7 +76,7 @@ h1{
   }
   
   /*FOOTER*/
-  .copy{
+  /* .copy{
 	bottom: 100%;
 	text-align: center;
 	color: black;
@@ -107,109 +110,70 @@ padding-bottom: 20px;
 transition: 0.5s;
 }
 
-
+ */
+ 
 /* barre de navigation*/
 
 .items{
-	color: white;
-	font-weight: bold;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 19px;	
-}
-
-nav{
-  box-sizing: border-box;
-  color : #222; 
+  color: white;
+  font-weight: bold;
   font-family: 'Bebas Neue', cursive;
-  width: 100%;
-  margin: 20px auto 50px auto;
-  background: #f5f3ee;
-  padding: 5px 40px;
-  letter-spacing: 2px;
-}
-nav ul{
-  list-style: none;
-  justify-content: center;
-}
-nav ul li{
-  padding: 15px 0;
-  cursor: pointer;
-  display: inline;
+  font-size: 19px;	
+  }
   
-}
-nav ul li.items{
-  position: relative;
-  width: auto;
-  margin: 0 16px;
-  text-align: center;
-  order: 3;
-}
-nav ul li.items:after{
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 5px;
-  height: 2px;
-  width: 100%;
-  background: #2E294E;
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-nav ul li.items:hover:after{
-  opacity: 1;
-  bottom: 8px;
-}
-nav ul li a{
+  /* navBar */
+  .nav-item,a {
+  display: inline-block;
+  margin: 0px 5px 0px 6px;
   color: #222;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Bebas Neue', sans-serif;
-  
   transition: .4s;
-}
-li a {
   text-decoration: none;
   color: black;
-}
-
-nav ul li:hover a{
-  color: #2E294E;
-  text-decoration: none;
-}
-nav ul li i{
-  font-size: 23px;
-}
-nav ul li.btnNav{
-  display: none;
-}
-nav ul li.btnNav.hide i:before{
-  content: '\f00d';
-}
-nav div{
-  float: right;
-  margin-top: 18px;
-}
-/*MEDIA QUERIES FOOTER*/
-@media screen and (max-width: 730px){
-    footer{
-    width: 100%;
-    font-size: 8px;
-    }
-  }
-  .social{
-    float: left;
-  }
-  .social img{
-    color: white;
-    padding-top: 15px ;
-    padding-left: 15px;
-    max-height: 32px;
   }
   
-  .myself p{
-    color: #485D69;
-    float: right;
-    padding-top: 20px;
-    padding-right: 10px;
-    font-size: 12px;
+  #navbarSupportedContent{
+  display:inline-block;
+  text-align: center;
+  } 
+  .row,ul{
+  margin: 0 auto;
   }
+  
+  /*FOOTER*/
+  
+  footer{
+  position: absolute;
+  bottom: 0;
+  display: contents;
+  }
+  .copy{
+  text-align: center;
+  color: black;
+  }
+  
+  #footersocial {
+  width: 100%;
+  position:absolute;
+  text-align: center;
+  bottom: 0;
+  color: #42433E;
+  margin-bottom: 1em;
+  background: #f5f3ee;
+  }
+  
+  
+  .social img {
+  padding-right: 15px;
+  transition: 0.8s;
+  }
+  
+  .social a img:hover {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.5s;
+  } 
+  
+  
   

@@ -19,9 +19,6 @@ if(!isset($_GET['pg'])){
         case "Contact":
             require_once "public/view/contact.php";
         break;
-        case "test":
-            require_once "public/view/test.php";
-        break;
         default:
         require_once "public/view/accueil.php";
     }

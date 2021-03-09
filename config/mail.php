@@ -21,7 +21,7 @@ if (isset($_POST["submit"])) {
 
         if (empty($sender)) {
             $errorSender = "Please enter your name.";
-        } else if (!preg_match("/^[a-zA-Z\s\.]+$/", $sender)) {
+        } else if (!preg_match("/^[a-zA-Z\s\.]$/", $sender)) {
             $senderPattern = "This is not a valid name.";
         } else if (strlen($sender) < 4) {
             $nameLength = "This is a bit short.";
@@ -29,7 +29,7 @@ if (isset($_POST["submit"])) {
 
         if (empty($address)) {
             $errorAddress = "Please enter your email address.";
-        } else if (!preg_match("/^[A-Za-z0-9-_]+@[a-z0-9]+\.{1}[a-z]{2,}+$/", $address)) {
+        } else if (!preg_match("/^[A-Za-z0-9-_]+@[a-z0-9]+\.{1,}[a-z]{2,}$/", $address)) {
             $mailPattern = "This is not a valid email address.";
         }
 
